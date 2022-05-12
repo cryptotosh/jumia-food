@@ -1,0 +1,649 @@
+/*...................................
+<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+
+font: Muli, Merriweather, Georgia, serif
+                Color
+Service header: #fefefe
+Service p:  #eaeaea
+#000000
+#f68b1e
+#cccccc
+#787878
+#2a2a2a
+#4a4a4a
+#000000, opacity 0%
+#000000, opacity 20.0%
+#000000, opacity 35.0%
+#000000, opacity 50.0%
+button: rgb(246,139,30)
+....................................*/
+
+/* HIDE DESKTOP VIEW */
+.desktop-section, .menubar-desktop, .mid-page{
+  display: none;
+}
+
+/* Global Styles */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
+
+}
+.wrapper{
+  position: relative;
+  background: #fefefe;
+  border: 1px solid #a39d9d;
+}
+body{
+  background: #fefefe;
+}
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+}
+
+/* MOBILE STYLING */
+/* Header styles */
+.banner{
+  width: 100%;
+  background: #f68b1e;
+}
+.banner p{
+  padding: 2rem 2rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+.menubar-mobile{
+  width: 100%;
+  background: #fefefe;
+  padding: 1rem 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+  box-shadow: 2px 0px 5px #000;
+}
+
+/* Styling Mobile Navigation links */
+.navbar-mobile{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background: #fefefe;
+  position: relative;
+  transform: translate(0%, 0%);
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  align-items: stretch;
+}
+.navbar-mobile li{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.4rem 0;
+  margin: 0 auto;
+  /* margin-top: 1rem; */
+  justify-content: center;
+  width: 60%;
+}
+.navbar-mobile li a{
+  color: #000;
+  font-size: 12px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navbar-mobile .navlink-img{
+  width: 15x;
+  height: 11px;
+  padding-right: 0.2rem;
+}
+.navbar-mobile li select{
+  box-shadow: none;
+  outline: none;
+  border: none;
+  background: transparent;
+  text-transform: uppercase;
+  font-family: 'Mulish', sans-serif;
+  color: #000;
+}
+.navbar-mobile li button{
+  width: 100%;
+  text-transform: uppercase;
+  background: #f68b1e;
+  color: #fefefe;
+  border: none;
+  padding: 0.4rem 0;
+}
+.navbar-mobile li button:hover{
+  background: #dd740c;
+}
+.navbar-mobile li:hover{
+  background: #efefef;
+}
+.navbar-mobile li:last-child:hover{
+  background: none;
+}
+.navbar-mobile.show{
+  display: flex;
+}
+.hamburger{
+  display: block;
+  border: none;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  color: #000;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 0.3rem;
+}
+hamburger:focus{
+  outline: none;
+}
+
+/* Styling sections */
+.mobile-section{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #000000;
+  /* flex-wrap: nowrap; */
+}
+.content>div{
+  padding: 0.5rem 1rem;
+}
+.content h2{
+  font-size: 28px;
+  opacity: 50%;
+}
+.content .deliver-to{
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: row;
+}
+.content .deliver-to p{
+  font-weight: 700;
+}
+.content .deliver-to img{
+  width: 17px;
+}
+.delivery-input input{
+  width: 100%;
+  padding: 0.8rem 0.5rem;
+  margin-bottom: 5rem;
+  border: 1px solid rgba(0, 0, 0, 0.288);
+  opacity: 50%;
+}
+.delivery-input input:focus{
+  border-bottom-color: #f68b1e;
+  outline: none;
+}
+.subscribe-form{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #f68b1e;
+  color: #fefefe;
+  padding: 1rem 0;
+  overflow: hidden;
+}
+.subscribe-form h3{
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0 2.5rem;
+}
+.subscribe-form .form-control{
+  width: 90%;
+  margin: .5rem auto;
+  padding: .8rem .2rem;
+  background: #fff;
+  color: rgba(0, 0, 0, 0.544);
+  border: none;
+  outline: none;
+  font-family: 'Mulish', sans-serif;
+  text-transform: uppercase;
+}
+.subscribe-form input::placeholder{
+  padding-left: .4rem;
+}
+.subscribe-form select option{
+  text-transform: uppercase;
+  opacity: 50%;
+}
+.subscribe-form .form-check{
+  width: 90%;
+  margin: .3rem auto;
+  padding: .8rem 0;
+}
+.subscribe-form .btn{
+  width: 90%;
+  margin: .3rem auto;
+  margin-bottom: 1.5rem;
+  padding: .8rem .2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: #2a2a2af0;
+  color: #eaeaea;
+}
+
+.order-food{
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0.5rem;
+  margin-top: 1rem;
+  background: #f1eded;
+}
+.order-food h3{
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+.order-food p{
+  text-align: center;
+  padding: 0 3rem;
+  color: rgba(0, 0, 0, 0.844);
+  font-weight: 500;
+}
+
+.download{
+  width: 100%;
+  background: #f68b1e;
+  color: #efefef;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 1rem 0;
+  padding-bottom: 10rem;
+}
+.download h3{
+  margin-bottom: 1rem;
+}
+.download .stores{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.download .store{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #eaeaea;
+  margin: .5rem auto;
+  padding: .5rem;
+}
+.download .apple, .download .android{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+.download .store .apple>div, .download .store .android>div{
+  padding-right: .5rem;
+}
+.download .store .app-icon {
+  font-size: 25px;
+}
+.download .store .store-text{
+  font-family: 'Merriweather', sans-serif;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}
+
+footer{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #181717f2;
+  color: #eaeaea;
+  padding: 5rem 1.5rem .1rem;
+  /* padding-top: 5rem; */
+}
+footer a, footer p{
+  color: #eaeaea88;
+  font-size: 12px;
+  font-weight: 500;
+}
+footer>div{
+  padding: 1.2rem 0 0 0;
+}
+footer .contact>h3, .city>h3, .cuisines>h3, .popular-vendor>h3, .jumia-food>h3{
+  padding: 0 0 1.2rem 0 ;
+  font-size: 14px;
+}
+footer a:hover{
+  color: #fff;
+}
+footer .contact{
+  display: flex;
+  flex-direction: column;
+}
+footer .contact .social-icons>a{
+  /* display: flex; */
+  padding: 0 0.3rem;
+}
+footer .conditions{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer .conditions .term{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 1.2rem;
+}
+footer .conditions .copy{
+  width: 100%;
+  padding-bottom: .8rem;
+}
+
+/* Media Query */
+/* for Tablets */
+@media all and (min-width: 600px){
+  .download .stores{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 5rem;
+  }
+  .download .store{
+    width: 45%;
+    /* margin: 0 2rem; */
+  } 
+}
+@media all and (min-width: 768px){
+  .download .stores{
+    padding: 0 7rem;
+  }
+  .order-food{
+    padding: 2rem 0.5rem;
+  }
+  .order-food p{
+    font-size: 1.2rem;
+  }
+}
+@media all and (min-width: 800px){
+  .content h2, h2, h3{
+    font-size: 2.5rem;
+  }
+  .subscribe-form{
+    padding: 1rem 7rem;
+  }
+  .subscribe-form .form-control, .subscribe-form .btn{
+    padding: 1.5rem .2rem;
+  }
+  .subscribe-form .form-check{
+    text-align: center;
+    font-size: 18px;
+  }
+  footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* padding: 5rem 1.5rem .1rem; */
+    padding: 5rem 0 2rem 2rem;
+  }
+  footer .conditions{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* for bigger screens and desktops */
+@media all and (min-width: 1024px){
+  .menubar-mobile, .mobile-section{
+    display: none;
+  }
+  .menubar-desktop{
+    width: 100%;
+    background: #fefefe;
+    padding: 1rem 1.5rem 1rem 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-bottom: 1rem;
+    box-shadow: 2px 0px 5px #000;
+  }
+  .navbar-desktop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-desktop li{
+    padding: 0 1.2rem;
+  }
+  .navbar-desktop li a{
+    color: #000;
+    font-size: 14px;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .navbar-desktop li .form-control{
+    /* box-shadow: none; */
+    outline: none;
+    border: none;
+    font-size: 14px;
+    background: transparent;
+    text-transform: uppercase;
+    font-family: 'Mulish', sans-serif;
+    color: #000;
+    cursor: pointer;
+  }
+  .navbar-desktop li .form-control option{
+    background: #fefefe;
+    color: #000;
+  }
+  .navbar-desktop li button{
+    text-transform: uppercase;
+    background: #f68b1e;
+    color: #fefefe;
+    border: none;
+    font-size: 14px;
+    padding: 0.7rem;
+  }
+  .navbar-desktop li button:hover{
+    background: #dd740c;
+  }
+
+  .desktop-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+  }
+  .desktop-section .sidebar img{
+    width: 100%;
+  }
+  .desktop-section .content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .desktop-section .content h2{
+    margin: 7rem auto 2rem;
+    text-align: center;
+  }
+  .content .section .deliver-to{
+    display: flex;
+    flex-direction: row;
+  }
+  .desktop-section .service-header{
+    margin: 1rem 0;
+    margin-top: -3.5rem;
+  }
+  .desktop-section .services{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .desktop-section .services>div{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+    width: 22%;
+    height: 15%;
+    font-size: 10px;
+    margin: 0.5rem;
+    border: 1px solid #b9aeaea0;
+    padding: 2rem 1rem;
+  }
+  .desktop-section .services .service-group img{
+    width: 50%;
+    color: #000;
+  }
+  .desktop-section .services .grayscale {
+    filter: grayscale(100%);
+    opacity: 30%;
+  }
+  .desktop-section .services .service-group{
+    color: #a39d9d;
+    /* opacity: 50%; */
+  }
+  .desktop-section .services .service-group h3{
+    font-size: 12px;
+  }
+  .mid-page{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .mid-page .howitworks{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5rem 0;
+    color: #737171;
+  }
+  .mid-page .howitworks h2{
+    font-size: 3.5rem;
+  }
+  .mid-page .howitworks .workpanel{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 2rem 1rem 0 2rem;
+  }
+  .mid-page .howitworks .workpanel>div{
+    width: 35%;
+    height: 15%;
+    font-size: 10px;
+    margin: 0.5rem 0.8rem 0.5rem 0.1rem;
+    text-align: center;
+  }
+  .mid-page .howitworks .workpanel h3{
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+  }
+  .mid-page .howitworks .workpanel p{
+    font-size: 1.1rem;
+  }
+
+  .subscribe-form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem 14rem;
+  }
+  .subscribe-form h3{
+    width: 100%;
+    text-align: center;
+    margin: 1rem auto;
+    font-size: 2.7rem;
+    padding: 0
+  }
+  .subscribe-form p{
+    text-align: center;
+    font-size: 17px;
+  }
+  .subscribe-form .input-form{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 0 0 0;
+  }
+  .subscribe-form .input-form input{
+    margin-left: 1rem; 
+  }
+  .subscribe-form .btn{
+    width: 100%;
+    margin: .3rem auto;
+    font-size: 18px;
+  }
+
+  .order-food{
+    /* position: relative; */
+    width: 100%;
+    padding: 5rem 10rem;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    background: #fefefe;
+  }
+  .order-food img{
+    position: absolute;
+    left: -26%;
+    top: 55%;
+  }
+  .order-food .corporate-food{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    width: 90%;
+    padding: 5rem 1.5rem;
+    /* border: 3px solid black; */
+  }
+  .order-food .corporate-food h3{
+    font-size: 3rem;
+  }
+  .order-food .corporate-food p{
+    font-size: 1.84rem;
+    text-align: center;
+  }
+
+  .download{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    /* margin-bottom: -10rem; */
+  }
+  .download img {
+    width: 70%;
+  }
+  .download .jumia-food{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .download .jumia-food .stores{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+}
