@@ -200,19 +200,28 @@
         <h3>Subscribe to our newsletter today!</h3>
         <p>Don't miss out on our great offers & Receive deals from all our top vendors via e-mail</p>
         <div class="input-form">
-          <select class="form-control" name="city" id="city">
-            <option value="none" selected>Click To Select</option>
-            <option value="none" disabled>Popular cities</option>
-            <option value="Abuja">Abuja</option>
-            <option value="Bayelsa">Bayelsa</option>
-            <option value="Delta">Delta</option>
-            <option value="Lagos">Lagos</option>
-            <option value="Port Harcout">Port Harcout</option>
-            <option value="none" disabled>Other cities</option>
-            <option value="Abakaliki">Abakaliki</option>
-            <option value="Abia">Abia</option>
-            <option value="Ado Ekiti">Ado Ekiti</option>
-            <option value="Akure">Akure</option>
+          <select onfocus="this.size=5;" onblur="this.size=5;" onchange="this.size=5; this.blur();"  class="form-control" name="city" id="city">
+            <option value="none" selected>Select your city</option>
+            <optgroup class="opt-group" label="Popular cities">
+              <option value="Abuja">Abuja</option>
+              <option value="Bayelsa">Bayelsa</option>
+              <option value="Delta">Delta</option>
+              <option value="Lagos">Lagos</option>
+              <option value="Port Harcout">Port Harcout</option>
+            </optgroup>
+            <optgroup class="opt-group" label="More Cities">
+              <option value="Abakaliki">Abakaliki</option>
+              <option value="Abia">Abia</option>
+              <option value="Ado Ekiti">Ado Ekiti</option>
+              <option value="Akure">Akure</option>
+              <option value="Abakaliki">Anambra</option>
+              <option value="Abia">Asaba</option>
+              <option value="Ado Ekiti">Benin Ekiti</option>
+              <option value="Akure">Enugun</option>
+              <option value="Abia">Ibadan</option>
+              <option value="Ado Ekiti">Ilorin Ekiti</option>
+              <option value="Akure">Kano</option>
+            </optgroup>
           </select>
           <input class="form-control" type="email" placeholder="E-mail">
         </div>
@@ -238,7 +247,9 @@
       <div class="download">
         <div class="jumia-food">
           <h3>Order food</h3>
-          <p>The Jumia Food app makes it simple for anybody to use a mobile device to look over the menu of the best vendors and place an order for home delivery.</p>
+          <p>
+            The Jumia Food app makes it simple for anybody to use a mobile device to look over the menu of the best vendors and place an order for home delivery.
+          </p>
           <div class="stores">
             <div class="store">
               <div class="apple">
@@ -290,19 +301,28 @@
       </main>
       <form class="subscribe-form">
         <h3>Subscribe to our newsletter today!</h3>
-        <select class="form-control" name="city" id="city">
-          <option value="none" selected>Click To Select</option>
-          <option value="none" disabled>Popular cities</option>
-          <option value="Abuja">Abuja</option>
-          <option value="Bayelsa">Bayelsa</option>
-          <option value="Delta">Delta</option>
-          <option value="Lagos">Lagos</option>
-          <option value="Port Harcout">Port Harcout</option>
-          <option value="none" disabled>Other cities</option>
-          <option value="Abakaliki">Abakaliki</option>
-          <option value="Abia">Abia</option>
-          <option value="Ado Ekiti">Ado Ekiti</option>
-          <option value="Akure">Akure</option>
+        <select onfocus="this.size=5;" onblur="this.size=1;" onchange="this.size=1; this.blur();"  class="form-control" name="city" id="city">
+          <option value="none" selected>Select your city</option>
+          <optgroup class="opt-group" label="Popular cities">
+            <option value="Abuja">Abuja</option>
+            <option value="Bayelsa">Bayelsa</option>
+            <option value="Delta">Delta</option>
+            <option value="Lagos">Lagos</option>
+            <option value="Port Harcout">Port Harcout</option>
+          </optgroup>
+          <optgroup class="opt-group" label="More Cities">
+            <option value="Abakaliki">Abakaliki</option>
+            <option value="Abia">Abia</option>
+            <option value="Ado Ekiti">Ado Ekiti</option>
+            <option value="Akure">Akure</option>
+            <option value="Abakaliki">Anambra</option>
+            <option value="Abia">Asaba</option>
+            <option value="Ado Ekiti">Benin Ekiti</option>
+            <option value="Akure">Enugun</option>
+            <option value="Abia">Ibadan</option>
+            <option value="Ado Ekiti">Ilorin Ekiti</option>
+            <option value="Akure">Kano</option>
+          </optgroup>
         </select>
         <input class="form-control" type="email" placeholder="E-mail">
         <div class="form-check">
